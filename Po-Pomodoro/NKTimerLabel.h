@@ -1,5 +1,5 @@
 //
-//  NKViewController.h
+//  NKTimerLabel.h
 //  Po-Pomodoro
 //
 //  Created by Nikita Kolmogorov on 05.12.13.
@@ -8,6 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface NKViewController : UIViewController
+@interface NKTimerLabel : UILabel
+
+
+
+- (void)startCountDown;
+- (void)stopCountDown;
 
 @end
