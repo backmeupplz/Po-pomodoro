@@ -22,6 +22,7 @@
 		B3FDF38C1851089B0052053B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3FDF36B1851089B0052053B /* UIKit.framework */; };
 		B3FDF3941851089B0052053B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B3FDF3921851089B0052053B /* InfoPlist.strings */; };
 		B3FDF3961851089B0052053B /* Po_PomodoroTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B3FDF3951851089B0052053B /* Po_PomodoroTests.m */; };
+		B3FDF3A3185114BA0052053B /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3FDF3A2185114BA0052053B /* SWRevealViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,8 @@
 		B3FDF3911851089B0052053B /* Po-PomodoroTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Po-PomodoroTests-Info.plist"; sourceTree = "<group>"; };
 		B3FDF3931851089B0052053B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B3FDF3951851089B0052053B /* Po_PomodoroTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Po_PomodoroTests.m; sourceTree = "<group>"; };
+		B3FDF3A1185114BA0052053B /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		B3FDF3A2185114BA0052053B /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +90,7 @@
 				B3FDF36D1851089B0052053B /* Po-Pomodoro */,
 				B3FDF38F1851089B0052053B /* Po-PomodoroTests */,
 				B3FDF3661851089A0052053B /* Frameworks */,
+				B3FDF39F1851146F0052053B /* Dependencies */,
 				B3FDF3651851089A0052053B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -153,6 +157,23 @@
 				B3FDF3921851089B0052053B /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B3FDF39F1851146F0052053B /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				B3FDF3A0185114BA0052053B /* SWRevealViewController */,
+			);
+			name = Dependencies;
+			sourceTree = "<group>";
+		};
+		B3FDF3A0185114BA0052053B /* SWRevealViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B3FDF3A1185114BA0052053B /* SWRevealViewController.h */,
+				B3FDF3A2185114BA0052053B /* SWRevealViewController.m */,
+			);
+			path = SWRevealViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,6 +278,7 @@
 				B3FDF3811851089B0052053B /* NKViewController.m in Sources */,
 				B3FDF3741851089B0052053B /* main.m in Sources */,
 				B3FDF3781851089B0052053B /* NKAppDelegate.m in Sources */,
+				B3FDF3A3185114BA0052053B /* SWRevealViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -475,6 +497,7 @@
 				B3FDF39B1851089B0052053B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B3FDF39C1851089B0052053B /* Build configuration list for PBXNativeTarget "Po-PomodoroTests" */ = {
 			isa = XCConfigurationList;
@@ -483,6 +506,7 @@
 				B3FDF39E1851089B0052053B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
