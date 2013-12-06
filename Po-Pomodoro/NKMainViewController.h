@@ -9,13 +9,17 @@
 #import <UIKit/UIKit.h>
 #import "SWRevealViewController.h"
 #import "NKTimerLabel.h"
+#import "NKTimerCircle.h"
 
 @interface NKMainViewController : UIViewController <SWRevealViewControllerDelegate>
 
 // UI properties
 @property (weak, nonatomic) IBOutlet NKTimerLabel *timerLabel;
+@property (weak, nonatomic) IBOutlet NKTimerCircle *timerCircle;
+@property (weak, nonatomic) IBOutlet UISlider *slider;
 
 - (IBAction)toggleLeftTouched:(UIButton *)sender;
-- (IBAction)toggleRightTouched:(UIButton *)sender;
+
+- (IBAction)sliderChanged:(UISlider *)sender;
 
 @end

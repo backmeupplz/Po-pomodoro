@@ -27,6 +27,7 @@
 		B3FDF3AF185128AD0052053B /* btn_right.png in Resources */ = {isa = PBXBuildFile; fileRef = B3FDF3AD185128AD0052053B /* btn_right.png */; };
 		B3FDF3B318513DAB0052053B /* NKTimerLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = B3FDF3B218513DAB0052053B /* NKTimerLabel.m */; };
 		B3FDF3B618513E480052053B /* NSString+Time.m in Sources */ = {isa = PBXBuildFile; fileRef = B3FDF3B518513E480052053B /* NSString+Time.m */; };
+		B3FDF3BC1851537C0052053B /* NKTimerCircle.m in Sources */ = {isa = PBXBuildFile; fileRef = B3FDF3BB1851537C0052053B /* NKTimerCircle.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,9 @@
 		B3FDF3B218513DAB0052053B /* NKTimerLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKTimerLabel.m; sourceTree = "<group>"; };
 		B3FDF3B418513E480052053B /* NSString+Time.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Time.h"; sourceTree = "<group>"; };
 		B3FDF3B518513E480052053B /* NSString+Time.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Time.m"; sourceTree = "<group>"; };
+		B3FDF3BA1851537C0052053B /* NKTimerCircle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKTimerCircle.h; sourceTree = "<group>"; };
+		B3FDF3BB1851537C0052053B /* NKTimerCircle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKTimerCircle.m; sourceTree = "<group>"; };
+		B3FDF3BD185177130052053B /* NKTimerLabelDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NKTimerLabelDelegate.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -191,6 +195,8 @@
 			children = (
 				B3FDF3B118513DAB0052053B /* NKTimerLabel.h */,
 				B3FDF3B218513DAB0052053B /* NKTimerLabel.m */,
+				B3FDF3BA1851537C0052053B /* NKTimerCircle.h */,
+				B3FDF3BB1851537C0052053B /* NKTimerCircle.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -202,6 +208,7 @@
 				B3FDF3771851089B0052053B /* NKAppDelegate.m */,
 				B3FDF3B418513E480052053B /* NSString+Time.h */,
 				B3FDF3B518513E480052053B /* NSString+Time.m */,
+				B3FDF3BD185177130052053B /* NKTimerLabelDelegate.h */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -331,6 +338,7 @@
 				B3FDF3AB185117180052053B /* NKMainViewController.m in Sources */,
 				B3FDF3B618513E480052053B /* NSString+Time.m in Sources */,
 				B3FDF3A3185114BA0052053B /* SWRevealViewController.m in Sources */,
+				B3FDF3BC1851537C0052053B /* NKTimerCircle.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

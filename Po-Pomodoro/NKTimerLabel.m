@@ -9,8 +9,15 @@
 #import "NKTimerLabel.h"
 #import "NSString+Time.h"
 
-@implementation NKTimerLabel {
-    NSTimer *timer;
+@implementation NKTimerLabel
+
+@synthesize initialValue;
+
+#pragma mark - Accessors -
+
+- (void)setInitialValue:(NSString *)newInitialValue {
+    initialValue = newInitialValue;
+    self.text = newInitialValue;
 }
 
 #pragma mark - View life cycle -
@@ -18,32 +25,17 @@
 - (void)awakeFromNib
 {
     [super awakeFromNib];
-    
-    [self startCountDown];
 }
 
 #pragma mark - General methods -
 
-- (void)startCountDown
-{
-    if (!timer.isValid)
-        timer = [NSTimer scheduledTimerWithTimeInterval:0.1 target:self selector:@selector(decrementByOneSecond) userInfo:nil repeats:YES];
-}
-
-- (void)stopCountDown
-{
-    [timer invalidate];
-}
-
 - (void)decrementByOneSecond
 {
     int time = [self.text seconds];
-    time--;
-    int hours = time/3600;
-    time %= 3600;
-    int minutes = time / 60;
-    int seconds = time % 60;
-    self.text = [NSString stringFromHours:hours minutes:minutes seconds:seconds];
+    if (time > 0) {
+        time--;
+        self.text = [NSString stringFromSeconds:time];
+    }
 }
 
 @end

@@ -1,5 +1,5 @@
 //
-//  NKTimerLabel.h
+//  NKTimerCircle.h
 //  Po-Pomodoro
 //
 //  Created by Nikita Kolmogorov on 05.12.13.
@@ -8,10 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface NKTimerLabel : UILabel
+@interface NKTimerCircle : UIView
 
-@property (strong, nonatomic) NSString *initialValue;
-
-- (void)decrementByOneSecond;
+@property float percent;
+@property BOOL reverse;
 
 @end

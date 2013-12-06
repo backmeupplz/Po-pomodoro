@@ -19,7 +19,14 @@
     }
 }
 
-
++ (NSString *)stringFromSeconds:(int)seconds
+{
+    int hours = seconds/3600;
+    seconds %= 3600;
+    int minutes = seconds / 60;
+    int inSeconds = seconds % 60;
+    return [NSString stringFromHours:hours minutes:minutes seconds:inSeconds];
+}
 
 - (int)seconds
 {
