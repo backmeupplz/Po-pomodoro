@@ -160,7 +160,21 @@
     NSMutableArray *array = [[userDefaults objectForKey:pomodoroHistory] mutableCopy];
     [array addObject:@([[NSDate date] timeIntervalSince1970])];
     [userDefaults setObject:array forKey:pomodoroHistory];
-    NSLog(@"%@",[userDefaults objectForKey:pomodoroHistory]);
+}
+
+#pragma mark - Rotation -
+
+- (void)willAnimateRotationToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration {
+    if (!IPAD) {
+        if (toInterfaceOrientation == UIInterfaceOrientationLandscapeLeft ||
+            toInterfaceOrientation == UIInterfaceOrientationLandscapeRight) {
+            [self hideToolbar:YES];
+            self.tapGR.enabled = NO;
+        } else {
+            [self hideToolbar:NO];
+            self.tapGR.enabled = YES;
+        }
+    }
 }
 
 @end

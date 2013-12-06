@@ -17,6 +17,7 @@
 
 // UI properties
 @property (weak, nonatomic) IBOutlet UIView *toolbar;
+@property (strong, nonatomic) IBOutlet UITapGestureRecognizer *tapGR;
 
 @property (weak, nonatomic) IBOutlet NKTimerLabel *timerLabel;
 @property (weak, nonatomic) IBOutlet NKTimerCircle *timerCircle;
