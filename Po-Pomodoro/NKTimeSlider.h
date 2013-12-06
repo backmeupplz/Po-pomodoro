@@ -1,17 +1,15 @@
 //
-//  NKTimerLabelDelegate.h
+//  NKTimeSlider.h
 //  Po-Pomodoro
 //
 //  Created by Nikita Kolmogorov on 05.12.13.
 //  Copyright (c) 2013 Nikita Kolmogorov. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
-@protocol NKTimerLabelDelegate <NSObject>
+@interface NKTimeSlider : UISlider
 
-- (void)timerLabelDidReachZero {
-    
-}
+@property BOOL reverse;
 
 @end

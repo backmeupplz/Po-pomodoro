@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B3CE2DAF1851AE78006490C2 /* NKSideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3CE2DAE1851AE78006490C2 /* NKSideViewController.m */; };
+		B3CE2DB21851B397006490C2 /* NKSideMenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B3CE2DB11851B397006490C2 /* NKSideMenuCell.m */; };
+		B3CE2DB41851D18E006490C2 /* icon_tomato.png in Resources */ = {isa = PBXBuildFile; fileRef = B3CE2DB31851D18E006490C2 /* icon_tomato.png */; };
+		B3CE2DB81851E4A4006490C2 /* bear.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B3CE2DB71851E4A4006490C2 /* bear.jpg */; };
 		B3FDF3681851089B0052053B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3FDF3671851089B0052053B /* Foundation.framework */; };
 		B3FDF36A1851089B0052053B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3FDF3691851089B0052053B /* CoreGraphics.framework */; };
 		B3FDF36C1851089B0052053B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3FDF36B1851089B0052053B /* UIKit.framework */; };
@@ -23,11 +27,18 @@
 		B3FDF3961851089B0052053B /* Po_PomodoroTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B3FDF3951851089B0052053B /* Po_PomodoroTests.m */; };
 		B3FDF3A3185114BA0052053B /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3FDF3A2185114BA0052053B /* SWRevealViewController.m */; };
 		B3FDF3AB185117180052053B /* NKMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3FDF3AA185117180052053B /* NKMainViewController.m */; };
-		B3FDF3AE185128AD0052053B /* btn_left.png in Resources */ = {isa = PBXBuildFile; fileRef = B3FDF3AC185128AD0052053B /* btn_left.png */; };
-		B3FDF3AF185128AD0052053B /* btn_right.png in Resources */ = {isa = PBXBuildFile; fileRef = B3FDF3AD185128AD0052053B /* btn_right.png */; };
 		B3FDF3B318513DAB0052053B /* NKTimerLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = B3FDF3B218513DAB0052053B /* NKTimerLabel.m */; };
 		B3FDF3B618513E480052053B /* NSString+Time.m in Sources */ = {isa = PBXBuildFile; fileRef = B3FDF3B518513E480052053B /* NSString+Time.m */; };
 		B3FDF3BC1851537C0052053B /* NKTimerCircle.m in Sources */ = {isa = PBXBuildFile; fileRef = B3FDF3BB1851537C0052053B /* NKTimerCircle.m */; };
+		B3FDF3C318517C780052053B /* icon_next.png in Resources */ = {isa = PBXBuildFile; fileRef = B3FDF3BE18517C780052053B /* icon_next.png */; };
+		B3FDF3C418517C780052053B /* icon_pause.png in Resources */ = {isa = PBXBuildFile; fileRef = B3FDF3BF18517C780052053B /* icon_pause.png */; };
+		B3FDF3C518517C780052053B /* icon_play.png in Resources */ = {isa = PBXBuildFile; fileRef = B3FDF3C018517C780052053B /* icon_play.png */; };
+		B3FDF3C618517C780052053B /* icon_side.png in Resources */ = {isa = PBXBuildFile; fileRef = B3FDF3C118517C780052053B /* icon_side.png */; };
+		B3FDF3C718517C780052053B /* icon_stop.png in Resources */ = {isa = PBXBuildFile; fileRef = B3FDF3C218517C780052053B /* icon_stop.png */; };
+		B3FDF3C9185193070052053B /* icon_down.png in Resources */ = {isa = PBXBuildFile; fileRef = B3FDF3C8185193070052053B /* icon_down.png */; };
+		B3FDF3CB185193230052053B /* icon_up.png in Resources */ = {isa = PBXBuildFile; fileRef = B3FDF3CA185193230052053B /* icon_up.png */; };
+		B3FDF3CE185193E30052053B /* NKTimeIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = B3FDF3CD185193E30052053B /* NKTimeIndicatorView.m */; };
+		B3FDF3D118519C000052053B /* NKTimeSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = B3FDF3D018519C000052053B /* NKTimeSlider.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +52,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B3CE2DAC1851A8F0006490C2 /* Config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Config.h; sourceTree = "<group>"; };
+		B3CE2DAD1851AE78006490C2 /* NKSideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKSideViewController.h; sourceTree = "<group>"; };
+		B3CE2DAE1851AE78006490C2 /* NKSideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKSideViewController.m; sourceTree = "<group>"; };
+		B3CE2DB01851B397006490C2 /* NKSideMenuCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKSideMenuCell.h; sourceTree = "<group>"; };
+		B3CE2DB11851B397006490C2 /* NKSideMenuCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKSideMenuCell.m; sourceTree = "<group>"; };
+		B3CE2DB31851D18E006490C2 /* icon_tomato.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_tomato.png; sourceTree = "<group>"; };
+		B3CE2DB71851E4A4006490C2 /* bear.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bear.jpg; sourceTree = "<group>"; };
 		B3FDF3641851089A0052053B /* Po-Pomodoro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Po-Pomodoro.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3FDF3671851089B0052053B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B3FDF3691851089B0052053B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -63,15 +81,23 @@
 		B3FDF3A2185114BA0052053B /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		B3FDF3A9185117180052053B /* NKMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKMainViewController.h; sourceTree = "<group>"; };
 		B3FDF3AA185117180052053B /* NKMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKMainViewController.m; sourceTree = "<group>"; };
-		B3FDF3AC185128AD0052053B /* btn_left.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_left.png; sourceTree = "<group>"; };
-		B3FDF3AD185128AD0052053B /* btn_right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_right.png; sourceTree = "<group>"; };
 		B3FDF3B118513DAB0052053B /* NKTimerLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKTimerLabel.h; sourceTree = "<group>"; };
 		B3FDF3B218513DAB0052053B /* NKTimerLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKTimerLabel.m; sourceTree = "<group>"; };
 		B3FDF3B418513E480052053B /* NSString+Time.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Time.h"; sourceTree = "<group>"; };
 		B3FDF3B518513E480052053B /* NSString+Time.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Time.m"; sourceTree = "<group>"; };
 		B3FDF3BA1851537C0052053B /* NKTimerCircle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKTimerCircle.h; sourceTree = "<group>"; };
 		B3FDF3BB1851537C0052053B /* NKTimerCircle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKTimerCircle.m; sourceTree = "<group>"; };
-		B3FDF3BD185177130052053B /* NKTimerLabelDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NKTimerLabelDelegate.h; sourceTree = "<group>"; };
+		B3FDF3BE18517C780052053B /* icon_next.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_next.png; sourceTree = "<group>"; };
+		B3FDF3BF18517C780052053B /* icon_pause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_pause.png; sourceTree = "<group>"; };
+		B3FDF3C018517C780052053B /* icon_play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_play.png; sourceTree = "<group>"; };
+		B3FDF3C118517C780052053B /* icon_side.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_side.png; sourceTree = "<group>"; };
+		B3FDF3C218517C780052053B /* icon_stop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_stop.png; sourceTree = "<group>"; };
+		B3FDF3C8185193070052053B /* icon_down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_down.png; sourceTree = "<group>"; };
+		B3FDF3CA185193230052053B /* icon_up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_up.png; sourceTree = "<group>"; };
+		B3FDF3CC185193E30052053B /* NKTimeIndicatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKTimeIndicatorView.h; sourceTree = "<group>"; };
+		B3FDF3CD185193E30052053B /* NKTimeIndicatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKTimeIndicatorView.m; sourceTree = "<group>"; };
+		B3FDF3CF18519C000052053B /* NKTimeSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKTimeSlider.h; sourceTree = "<group>"; };
+		B3FDF3D018519C000052053B /* NKTimeSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKTimeSlider.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +127,7 @@
 		B3FDF35B1851089A0052053B = {
 			isa = PBXGroup;
 			children = (
+				B3CE2DAC1851A8F0006490C2 /* Config.h */,
 				B3FDF3791851089B0052053B /* Main_iPhone.storyboard */,
 				B3FDF37C1851089B0052053B /* Main_iPad.storyboard */,
 				B3FDF36D1851089B0052053B /* Po-Pomodoro */,
@@ -197,6 +224,12 @@
 				B3FDF3B218513DAB0052053B /* NKTimerLabel.m */,
 				B3FDF3BA1851537C0052053B /* NKTimerCircle.h */,
 				B3FDF3BB1851537C0052053B /* NKTimerCircle.m */,
+				B3FDF3CC185193E30052053B /* NKTimeIndicatorView.h */,
+				B3FDF3CD185193E30052053B /* NKTimeIndicatorView.m */,
+				B3FDF3CF18519C000052053B /* NKTimeSlider.h */,
+				B3FDF3D018519C000052053B /* NKTimeSlider.m */,
+				B3CE2DB01851B397006490C2 /* NKSideMenuCell.h */,
+				B3CE2DB11851B397006490C2 /* NKSideMenuCell.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -208,7 +241,6 @@
 				B3FDF3771851089B0052053B /* NKAppDelegate.m */,
 				B3FDF3B418513E480052053B /* NSString+Time.h */,
 				B3FDF3B518513E480052053B /* NSString+Time.m */,
-				B3FDF3BD185177130052053B /* NKTimerLabelDelegate.h */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -218,6 +250,8 @@
 			children = (
 				B3FDF3A9185117180052053B /* NKMainViewController.h */,
 				B3FDF3AA185117180052053B /* NKMainViewController.m */,
+				B3CE2DAD1851AE78006490C2 /* NKSideViewController.h */,
+				B3CE2DAE1851AE78006490C2 /* NKSideViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -225,8 +259,15 @@
 		B3FDF3B0185128D10052053B /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				B3FDF3AC185128AD0052053B /* btn_left.png */,
-				B3FDF3AD185128AD0052053B /* btn_right.png */,
+				B3CE2DB71851E4A4006490C2 /* bear.jpg */,
+				B3CE2DB31851D18E006490C2 /* icon_tomato.png */,
+				B3FDF3CA185193230052053B /* icon_up.png */,
+				B3FDF3C8185193070052053B /* icon_down.png */,
+				B3FDF3BE18517C780052053B /* icon_next.png */,
+				B3FDF3BF18517C780052053B /* icon_pause.png */,
+				B3FDF3C018517C780052053B /* icon_play.png */,
+				B3FDF3C118517C780052053B /* icon_side.png */,
+				B3FDF3C218517C780052053B /* icon_stop.png */,
 			);
 			name = Images;
 			sourceTree = "<group>";
@@ -308,12 +349,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3FDF3CB185193230052053B /* icon_up.png in Resources */,
+				B3FDF3C718517C780052053B /* icon_stop.png in Resources */,
+				B3CE2DB41851D18E006490C2 /* icon_tomato.png in Resources */,
+				B3CE2DB81851E4A4006490C2 /* bear.jpg in Resources */,
 				B3FDF37E1851089B0052053B /* Main_iPad.storyboard in Resources */,
-				B3FDF3AF185128AD0052053B /* btn_right.png in Resources */,
-				B3FDF3AE185128AD0052053B /* btn_left.png in Resources */,
 				B3FDF3831851089B0052053B /* Images.xcassets in Resources */,
 				B3FDF37B1851089B0052053B /* Main_iPhone.storyboard in Resources */,
 				B3FDF3721851089B0052053B /* InfoPlist.strings in Resources */,
+				B3FDF3C318517C780052053B /* icon_next.png in Resources */,
+				B3FDF3C9185193070052053B /* icon_down.png in Resources */,
+				B3FDF3C618517C780052053B /* icon_side.png in Resources */,
+				B3FDF3C418517C780052053B /* icon_pause.png in Resources */,
+				B3FDF3C518517C780052053B /* icon_play.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,13 +380,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3FDF3CE185193E30052053B /* NKTimeIndicatorView.m in Sources */,
 				B3FDF3741851089B0052053B /* main.m in Sources */,
 				B3FDF3B318513DAB0052053B /* NKTimerLabel.m in Sources */,
+				B3FDF3D118519C000052053B /* NKTimeSlider.m in Sources */,
+				B3CE2DAF1851AE78006490C2 /* NKSideViewController.m in Sources */,
 				B3FDF3781851089B0052053B /* NKAppDelegate.m in Sources */,
 				B3FDF3AB185117180052053B /* NKMainViewController.m in Sources */,
 				B3FDF3B618513E480052053B /* NSString+Time.m in Sources */,
 				B3FDF3A3185114BA0052053B /* SWRevealViewController.m in Sources */,
 				B3FDF3BC1851537C0052053B /* NKTimerCircle.m in Sources */,
+				B3CE2DB21851B397006490C2 /* NKSideMenuCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

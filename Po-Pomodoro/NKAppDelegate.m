@@ -12,8 +12,16 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    
+    [self initializeUserDefaults];
     return YES;
+}
+
+- (void)initializeUserDefaults {
+    if (![userDefaults objectForKey:wasLaunchedBefore]) {
+        [userDefaults setObject:@YES forKey:wasLaunchedBefore];
+        
+        [userDefaults setObject:@[] forKey:pomodoroHistory];
+    }
 }
 
 @end
