@@ -7,12 +7,21 @@
 //
 
 #import "NKAppDelegate.h"
+#import "GAI.h"
 
 @implementation NKAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    // Initialize user defaults
     [self initializeUserDefaults];
+    
+    // Initialize Google Analytics
+    [[GAI sharedInstance] trackerWithTrackingId:@"UA-43367175-5"];
+    
+    // App is always active
+    [UIApplication sharedApplication].idleTimerDisabled = YES;
+    
     return YES;
 }
 

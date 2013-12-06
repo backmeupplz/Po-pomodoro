@@ -11,6 +11,10 @@
 		B3CE2DB21851B397006490C2 /* NKSideMenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B3CE2DB11851B397006490C2 /* NKSideMenuCell.m */; };
 		B3CE2DB41851D18E006490C2 /* icon_tomato.png in Resources */ = {isa = PBXBuildFile; fileRef = B3CE2DB31851D18E006490C2 /* icon_tomato.png */; };
 		B3CE2DB81851E4A4006490C2 /* bear.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B3CE2DB71851E4A4006490C2 /* bear.jpg */; };
+		B3CE2DC01852073F006490C2 /* libGoogleAnalyticsServices.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B3CE2DBF1852073F006490C2 /* libGoogleAnalyticsServices.a */; };
+		B3CE2DC31852087E006490C2 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B3CE2DC21852087E006490C2 /* libz.dylib */; };
+		B3CE2DC518520886006490C2 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3CE2DC418520886006490C2 /* CoreData.framework */; };
+		B3CE2DC718520896006490C2 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3CE2DC618520896006490C2 /* SystemConfiguration.framework */; };
 		B3FDF3681851089B0052053B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3FDF3671851089B0052053B /* Foundation.framework */; };
 		B3FDF36A1851089B0052053B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3FDF3691851089B0052053B /* CoreGraphics.framework */; };
 		B3FDF36C1851089B0052053B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3FDF36B1851089B0052053B /* UIKit.framework */; };
@@ -59,6 +63,20 @@
 		B3CE2DB11851B397006490C2 /* NKSideMenuCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKSideMenuCell.m; sourceTree = "<group>"; };
 		B3CE2DB31851D18E006490C2 /* icon_tomato.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_tomato.png; sourceTree = "<group>"; };
 		B3CE2DB71851E4A4006490C2 /* bear.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bear.jpg; sourceTree = "<group>"; };
+		B3CE2DB91852072E006490C2 /* GAI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAI.h; sourceTree = "<group>"; };
+		B3CE2DBA1852072E006490C2 /* GAIDictionaryBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAIDictionaryBuilder.h; sourceTree = "<group>"; };
+		B3CE2DBB1852072E006490C2 /* GAIFields.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAIFields.h; sourceTree = "<group>"; };
+		B3CE2DBC1852072E006490C2 /* GAILogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAILogger.h; sourceTree = "<group>"; };
+		B3CE2DBD1852072E006490C2 /* GAITrackedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAITrackedViewController.h; sourceTree = "<group>"; };
+		B3CE2DBE1852072E006490C2 /* GAITracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAITracker.h; sourceTree = "<group>"; };
+		B3CE2DBF1852073F006490C2 /* libGoogleAnalyticsServices.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGoogleAnalyticsServices.a; sourceTree = "<group>"; };
+		B3CE2DC21852087E006490C2 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		B3CE2DC418520886006490C2 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		B3CE2DC618520896006490C2 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		B3CE2DC818521101006490C2 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main_iPhone.strings; sourceTree = "<group>"; };
+		B3CE2DC918521102006490C2 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main_iPad.strings; sourceTree = "<group>"; };
+		B3CE2DCA18521102006490C2 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B3CE2DCB18521102006490C2 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B3FDF3641851089A0052053B /* Po-Pomodoro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Po-Pomodoro.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3FDF3671851089B0052053B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B3FDF3691851089B0052053B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -105,9 +123,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3CE2DC718520896006490C2 /* SystemConfiguration.framework in Frameworks */,
+				B3CE2DC518520886006490C2 /* CoreData.framework in Frameworks */,
+				B3CE2DC31852087E006490C2 /* libz.dylib in Frameworks */,
 				B3FDF36A1851089B0052053B /* CoreGraphics.framework in Frameworks */,
 				B3FDF36C1851089B0052053B /* UIKit.framework in Frameworks */,
 				B3FDF3681851089B0052053B /* Foundation.framework in Frameworks */,
+				B3CE2DC01852073F006490C2 /* libGoogleAnalyticsServices.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -124,6 +146,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B3CE2DC118520742006490C2 /* Google Analytics */ = {
+			isa = PBXGroup;
+			children = (
+				B3CE2DBF1852073F006490C2 /* libGoogleAnalyticsServices.a */,
+				B3CE2DB91852072E006490C2 /* GAI.h */,
+				B3CE2DBA1852072E006490C2 /* GAIDictionaryBuilder.h */,
+				B3CE2DBB1852072E006490C2 /* GAIFields.h */,
+				B3CE2DBC1852072E006490C2 /* GAILogger.h */,
+				B3CE2DBD1852072E006490C2 /* GAITrackedViewController.h */,
+				B3CE2DBE1852072E006490C2 /* GAITracker.h */,
+			);
+			name = "Google Analytics";
+			sourceTree = "<group>";
+		};
 		B3FDF35B1851089A0052053B = {
 			isa = PBXGroup;
 			children = (
@@ -150,6 +186,9 @@
 		B3FDF3661851089A0052053B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B3CE2DC618520896006490C2 /* SystemConfiguration.framework */,
+				B3CE2DC418520886006490C2 /* CoreData.framework */,
+				B3CE2DC21852087E006490C2 /* libz.dylib */,
 				B3FDF3671851089B0052053B /* Foundation.framework */,
 				B3FDF3691851089B0052053B /* CoreGraphics.framework */,
 				B3FDF36B1851089B0052053B /* UIKit.framework */,
@@ -203,6 +242,7 @@
 		B3FDF39F1851146F0052053B /* Dependencies */ = {
 			isa = PBXGroup;
 			children = (
+				B3CE2DC118520742006490C2 /* Google Analytics */,
 				B3FDF3A0185114BA0052053B /* SWRevealViewController */,
 			);
 			name = Dependencies;
@@ -332,6 +372,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ru,
 			);
 			mainGroup = B3FDF35B1851089A0052053B;
 			productRefGroup = B3FDF3651851089A0052053B /* Products */;
@@ -417,6 +458,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				B3FDF3711851089B0052053B /* en */,
+				B3CE2DCA18521102006490C2 /* ru */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -425,6 +467,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				B3FDF37A1851089B0052053B /* Base */,
+				B3CE2DC818521101006490C2 /* ru */,
 			);
 			name = Main_iPhone.storyboard;
 			path = "Po-Pomodoro";
@@ -434,6 +477,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				B3FDF37D1851089B0052053B /* Base */,
+				B3CE2DC918521102006490C2 /* ru */,
 			);
 			name = Main_iPad.storyboard;
 			path = "Po-Pomodoro";
@@ -443,6 +487,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				B3FDF3931851089B0052053B /* en */,
+				B3CE2DCB18521102006490C2 /* ru */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -527,12 +572,19 @@
 		B3FDF39A1851089B0052053B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Po-Pomodoro/Po-Pomodoro-Prefix.pch";
 				INFOPLIST_FILE = "Po-Pomodoro/Po-Pomodoro-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_DEVELOPER_DIR)/Borodutch/Po-Pomodoro",
+				);
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "armv7 armv7s";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -540,12 +592,19 @@
 		B3FDF39B1851089B0052053B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Po-Pomodoro/Po-Pomodoro-Prefix.pch";
 				INFOPLIST_FILE = "Po-Pomodoro/Po-Pomodoro-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_DEVELOPER_DIR)/Borodutch/Po-Pomodoro",
+				);
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "armv7 armv7s";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

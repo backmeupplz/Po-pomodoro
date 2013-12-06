@@ -28,6 +28,8 @@
     pomodoro = @[@"25", @"5", @"25", @"5", @"25", @"5", @"25", @"30"];
     
     self.timerLabel.initialValue = [NSString stringWithFormat:@"%@:00",pomodoro[currentPomodoro]];
+    
+    self.screenName = @"Main Screen";
 }
 
 #pragma mark - NKTimerLabelDelegate -

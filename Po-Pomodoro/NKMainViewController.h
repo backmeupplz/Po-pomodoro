@@ -12,8 +12,9 @@
 #import "NKTimerCircle.h"
 #import "NKTimeIndicatorView.h"
 #import "NKTimeSlider.h"
+#import "GAI.h"
 
-@interface NKMainViewController : UIViewController <SWRevealViewControllerDelegate, NKTimerLabelDelegate>
+@interface NKMainViewController : GAITrackedViewController <SWRevealViewControllerDelegate, NKTimerLabelDelegate>
 
 // UI properties
 @property (weak, nonatomic) IBOutlet UIView *toolbar;

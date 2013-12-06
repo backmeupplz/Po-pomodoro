@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "GAI.h"
 
-@interface NKSideViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
+@interface NKSideViewController : GAITrackedViewController <UITableViewDataSource, UITableViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UITableView *table;
 

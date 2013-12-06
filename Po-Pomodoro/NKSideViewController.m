@@ -19,6 +19,8 @@
 {
     [super viewDidLoad];
     data = [self getDataFromRaw:[userDefaults objectForKey:pomodoroHistory]];
+    
+    self.screenName = @"Side Screen";
 }
 
 - (void)viewWillAppear:(BOOL)animated
