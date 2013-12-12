@@ -11,6 +11,7 @@
 		B32EC80A1859336500E470FF /* icon_sound.png in Resources */ = {isa = PBXBuildFile; fileRef = B32EC8081859336500E470FF /* icon_sound.png */; };
 		B32EC80C1859370700E470FF /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B32EC80B1859370700E470FF /* AVFoundation.framework */; };
 		B32EC80E1859376F00E470FF /* sound.wav in Resources */ = {isa = PBXBuildFile; fileRef = B32EC80D1859376F00E470FF /* sound.wav */; };
+		B32EC811185950A600E470FF /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B32EC813185950A600E470FF /* Localizable.strings */; };
 		B3CE2DAF1851AE78006490C2 /* NKSideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3CE2DAE1851AE78006490C2 /* NKSideViewController.m */; };
 		B3CE2DB21851B397006490C2 /* NKSideMenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B3CE2DB11851B397006490C2 /* NKSideMenuCell.m */; };
 		B3CE2DB41851D18E006490C2 /* icon_tomato.png in Resources */ = {isa = PBXBuildFile; fileRef = B3CE2DB31851D18E006490C2 /* icon_tomato.png */; };
@@ -64,6 +65,8 @@
 		B32EC8081859336500E470FF /* icon_sound.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_sound.png; sourceTree = "<group>"; };
 		B32EC80B1859370700E470FF /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		B32EC80D1859376F00E470FF /* sound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = sound.wav; sourceTree = "<group>"; };
+		B32EC812185950A600E470FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		B32EC814185950AB00E470FF /* ru */ = {isa = PBXFileReference; lastKnownFileType = file; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 		B3CE2DAC1851A8F0006490C2 /* Config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Config.h; sourceTree = "<group>"; };
 		B3CE2DAD1851AE78006490C2 /* NKSideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKSideViewController.h; sourceTree = "<group>"; };
 		B3CE2DAE1851AE78006490C2 /* NKSideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKSideViewController.m; sourceTree = "<group>"; };
@@ -228,6 +231,7 @@
 				B3FDF3701851089B0052053B /* InfoPlist.strings */,
 				B3FDF3731851089B0052053B /* main.m */,
 				B3FDF3751851089B0052053B /* Po-Pomodoro-Prefix.pch */,
+				B32EC813185950A600E470FF /* Localizable.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -403,6 +407,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B32EC811185950A600E470FF /* Localizable.strings in Resources */,
 				B3FDF3CB185193230052053B /* icon_up.png in Resources */,
 				B32EC80E1859376F00E470FF /* sound.wav in Resources */,
 				B3FDF3C718517C780052053B /* icon_stop.png in Resources */,
@@ -470,6 +475,15 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		B32EC813185950A600E470FF /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B32EC812185950A600E470FF /* Base */,
+				B32EC814185950AB00E470FF /* ru */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		B3FDF3701851089B0052053B /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (

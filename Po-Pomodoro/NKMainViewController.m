@@ -207,7 +207,7 @@
             UILocalNotification *notification = [[UILocalNotification alloc] init];
             notification.fireDate = [NSDate dateWithTimeIntervalSinceNow:secondsBeforeFire];
             
-            notification.alertBody = (i % 2 == 0) ? @"Great work! Time to have a rest" : @"It's time to work!";
+            notification.alertBody = (i % 2 == 0) ? NSLocalizedString(@"Great work! Time to have a rest",nil) : NSLocalizedString(@"It's time to work!", nil);
             if (isSoundOn)
                 notification.soundName = @"sound.wav";
             [[UIApplication sharedApplication] scheduleLocalNotification:notification];
