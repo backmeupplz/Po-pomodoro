@@ -127,7 +127,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="table" destination="YiX-Fs-zFx" id="p16-v4-9qq"/>
+                        <outlet property="table" destination="YiX-Fs-zFx" id="2AR-5Y-gmK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EJb-vT-DKs" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -283,9 +283,27 @@
                                             <action selector="toggleLeftTouched:" destination="7BC-GU-s0Y" eventType="touchUpInside" id="PiG-tO-nLm"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kWS-b6-cbS">
+                                        <rect key="frame" x="693" y="42" width="55" height="55"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="55" id="3Hc-15-obR"/>
+                                            <constraint firstAttribute="width" constant="55" id="DWw-rl-k5h"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <inset key="imageEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                                        <state key="normal" image="icon_sound.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="selected" image="icon_sound_off.png"/>
+                                        <connections>
+                                            <action selector="soundTouched:" destination="7BC-GU-s0Y" eventType="touchUpInside" id="jzf-i0-n0i"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
+                                    <constraint firstItem="kWS-b6-cbS" firstAttribute="top" secondItem="8PP-FH-30R" secondAttribute="top" constant="42" id="1YV-Or-dUz"/>
                                     <constraint firstAttribute="centerX" secondItem="FIt-T8-0lV" secondAttribute="centerX" id="30S-Rh-6XQ"/>
                                     <constraint firstItem="E2y-iT-NiX" firstAttribute="top" secondItem="8PP-FH-30R" secondAttribute="top" constant="45" id="5QN-Tw-dor"/>
                                     <constraint firstItem="Nna-yH-AYM" firstAttribute="top" secondItem="yGx-Yi-gsY" secondAttribute="bottom" constant="8" id="H8A-AY-doX"/>
@@ -294,6 +312,7 @@
                                     <constraint firstItem="E2y-iT-NiX" firstAttribute="leading" secondItem="8PP-FH-30R" secondAttribute="leading" constant="20" id="YN0-ug-pqc"/>
                                     <constraint firstAttribute="bottom" secondItem="FIt-T8-0lV" secondAttribute="bottom" constant="12" id="ca1-wS-2Hl"/>
                                     <constraint firstItem="yGx-Yi-gsY" firstAttribute="top" secondItem="8PP-FH-30R" secondAttribute="top" constant="52" id="e2A-hJ-yyP"/>
+                                    <constraint firstAttribute="trailing" secondItem="kWS-b6-cbS" secondAttribute="trailing" constant="20" id="eIT-Hw-LpF"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hpP-U4-MqO" customClass="NKTimerCircle">
@@ -339,6 +358,7 @@
                         <outlet property="pauseButton" destination="Php-qU-dtx" id="lZA-qI-Ufq"/>
                         <outlet property="playButton" destination="PqC-9M-EfY" id="mKc-H3-ymF"/>
                         <outlet property="slider" destination="hKc-5D-84t" id="P4d-io-y7O"/>
+                        <outlet property="soundButton" destination="kWS-b6-cbS" id="csW-ab-c87"/>
                         <outlet property="tapGR" destination="QLB-r4-lba" id="fqn-hv-F5q"/>
                         <outlet property="timeIndicator" destination="6a5-MT-SVG" id="11M-hd-QcG"/>
                         <outlet property="timerCircle" destination="hpP-U4-MqO" id="YFY-mZ-vlG"/>
@@ -363,6 +383,8 @@
         <image name="icon_pause.png" width="193" height="256"/>
         <image name="icon_play.png" width="213" height="256"/>
         <image name="icon_side.png" width="256" height="182"/>
+        <image name="icon_sound.png" width="256" height="256"/>
+        <image name="icon_sound_off.png" width="256" height="256"/>
         <image name="icon_stop.png" width="256" height="256"/>
         <image name="icon_tomato.png" width="70" height="70"/>
         <image name="icon_up.png" width="128" height="68"/>

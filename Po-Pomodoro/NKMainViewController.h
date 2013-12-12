@@ -20,6 +20,8 @@
 @property (weak, nonatomic) IBOutlet UIView *toolbar;
 @property (strong, nonatomic) IBOutlet UITapGestureRecognizer *tapGR;
 
+@property (weak, nonatomic) IBOutlet UIButton *soundButton;
+
 @property (weak, nonatomic) IBOutlet NKTimerLabel *timerLabel;
 @property (weak, nonatomic) IBOutlet NKTimerCircle *timerCircle;
 @property (weak, nonatomic) IBOutlet NKTimeSlider *slider;
@@ -35,6 +37,8 @@
 - (IBAction)downTouched:(UIButton *)sender;
 
 - (IBAction)toggleLeftTouched:(UIButton *)sender;
+- (IBAction)soundTouched:(UIButton *)sender;
+
 - (IBAction)sliderChanged:(UISlider *)sender;
 
 - (IBAction)stopTouched:(UIButton *)sender;

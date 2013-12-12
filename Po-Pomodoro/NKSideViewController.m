@@ -18,20 +18,11 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    data = [self getDataFromRaw:[userDefaults objectForKey:pomodoroHistory]];
     
     self.screenName = @"Side Screen";
-}
-
-- (void)viewWillAppear:(BOOL)animated
-{
-    [super viewWillAppear:animated];
+    
+    data = [self getDataFromRaw:[userDefaults objectForKey:pomodoroHistory]];
     [self startObserving];
-}
-
-- (void)viewWillDisappear:(BOOL)animated {
-    [self stopObserving];
-    [super viewWillDisappear:animated];
 }
 
 #pragma mark - KVO -

@@ -8,6 +8,7 @@
 
 #import "NKMainViewController.h"
 #import "NSString+Time.h"
+#import <AVFoundation/AVFoundation.h>
 
 @implementation NKMainViewController {
     NSTimer *timer;
@@ -15,6 +16,10 @@
     NSArray *pomodoro;
     
     int currentPomodoro;
+    
+    BOOL isSoundOn;
+    
+    AVAudioPlayer *sound;
 }
 
 #pragma mark - View Controller life cycle -
@@ -23,13 +28,27 @@
 {
     [super viewDidLoad];
     
+    // Add gr for side view
     [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
     
+    // Setup cycle
     pomodoro = @[@"25", @"5", @"25", @"5", @"25", @"5", @"25", @"30"];
     
+    // Set initial value
     self.timerLabel.initialValue = [NSString stringWithFormat:@"%@:00",pomodoro[currentPomodoro]];
     
+    // GA tracking
     self.screenName = @"Main Screen";
+    
+    // Setup sound
+    isSoundOn = [[[NSUserDefaults standardUserDefaults] objectForKey:@"isSoundOn"] boolValue];
+    self.soundButton.selected = !isSoundOn;
+    
+    // Setup audio
+    NSError *error = nil;
+    NSURL *url = [[NSURL alloc] initFileURLWithPath:[[NSBundle mainBundle] pathForResource:@"sound" ofType:@"wav"]];
+    sound = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:&error];
+    [sound prepareToPlay];
 }
 
 #pragma mark - NKTimerLabelDelegate -
@@ -38,21 +57,26 @@
 {
     if (currentPomodoro % 2 == 0)
         [self addPomodoroToHistory];
+    if (isSoundOn)
+        [sound play];
     [self downTouched:nil];
 }
 
 #pragma mark - Buttons methods -
 
-- (IBAction)screenTapped:(id)sender {
+- (IBAction)screenTapped:(id)sender
+{
     [self hideToolbar:(self.toolbar.alpha)];
 }
 
-- (IBAction)upTouched:(UIButton *)sender {
+- (IBAction)upTouched:(UIButton *)sender
+{
     [self prevTask];
     [self.timeIndicator pushUp:[pomodoro[currentPomodoro] intValue]];
 }
 
-- (IBAction)downTouched:(UIButton *)sender {
+- (IBAction)downTouched:(UIButton *)sender
+{
     [self nextTask];
     [self.timeIndicator pushDown:[pomodoro[currentPomodoro] intValue]];
 }
@@ -60,6 +84,13 @@
 - (IBAction)toggleLeftTouched:(UIButton *)sender
 {
     [self.revealViewController revealToggle:nil];
+}
+
+- (IBAction)soundTouched:(UIButton *)sender
+{
+    sender.selected = !sender.selected;
+    isSoundOn = !sender.selected;
+    [[NSUserDefaults standardUserDefaults] setObject:@(isSoundOn) forKey:@"isSoundOn"];
 }
 
 - (IBAction)sliderChanged:(UISlider *)sender

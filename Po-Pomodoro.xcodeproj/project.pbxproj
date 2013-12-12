@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B32EC8091859336500E470FF /* icon_sound_off.png in Resources */ = {isa = PBXBuildFile; fileRef = B32EC8071859336500E470FF /* icon_sound_off.png */; };
+		B32EC80A1859336500E470FF /* icon_sound.png in Resources */ = {isa = PBXBuildFile; fileRef = B32EC8081859336500E470FF /* icon_sound.png */; };
+		B32EC80C1859370700E470FF /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B32EC80B1859370700E470FF /* AVFoundation.framework */; };
+		B32EC80E1859376F00E470FF /* sound.wav in Resources */ = {isa = PBXBuildFile; fileRef = B32EC80D1859376F00E470FF /* sound.wav */; };
 		B3CE2DAF1851AE78006490C2 /* NKSideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3CE2DAE1851AE78006490C2 /* NKSideViewController.m */; };
 		B3CE2DB21851B397006490C2 /* NKSideMenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B3CE2DB11851B397006490C2 /* NKSideMenuCell.m */; };
 		B3CE2DB41851D18E006490C2 /* icon_tomato.png in Resources */ = {isa = PBXBuildFile; fileRef = B3CE2DB31851D18E006490C2 /* icon_tomato.png */; };
@@ -56,6 +60,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B32EC8071859336500E470FF /* icon_sound_off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_sound_off.png; sourceTree = "<group>"; };
+		B32EC8081859336500E470FF /* icon_sound.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_sound.png; sourceTree = "<group>"; };
+		B32EC80B1859370700E470FF /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		B32EC80D1859376F00E470FF /* sound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = sound.wav; sourceTree = "<group>"; };
 		B3CE2DAC1851A8F0006490C2 /* Config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Config.h; sourceTree = "<group>"; };
 		B3CE2DAD1851AE78006490C2 /* NKSideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKSideViewController.h; sourceTree = "<group>"; };
 		B3CE2DAE1851AE78006490C2 /* NKSideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKSideViewController.m; sourceTree = "<group>"; };
@@ -123,6 +131,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B32EC80C1859370700E470FF /* AVFoundation.framework in Frameworks */,
 				B3CE2DC718520896006490C2 /* SystemConfiguration.framework in Frameworks */,
 				B3CE2DC518520886006490C2 /* CoreData.framework in Frameworks */,
 				B3CE2DC31852087E006490C2 /* libz.dylib in Frameworks */,
@@ -186,6 +195,7 @@
 		B3FDF3661851089A0052053B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B32EC80B1859370700E470FF /* AVFoundation.framework */,
 				B3CE2DC618520896006490C2 /* SystemConfiguration.framework */,
 				B3CE2DC418520886006490C2 /* CoreData.framework */,
 				B3CE2DC21852087E006490C2 /* libz.dylib */,
@@ -212,6 +222,7 @@
 		B3FDF36E1851089B0052053B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B32EC80D1859376F00E470FF /* sound.wav */,
 				B3FDF3821851089B0052053B /* Images.xcassets */,
 				B3FDF36F1851089B0052053B /* Po-Pomodoro-Info.plist */,
 				B3FDF3701851089B0052053B /* InfoPlist.strings */,
@@ -300,6 +311,8 @@
 			isa = PBXGroup;
 			children = (
 				B3CE2DB71851E4A4006490C2 /* bear.jpg */,
+				B32EC8071859336500E470FF /* icon_sound_off.png */,
+				B32EC8081859336500E470FF /* icon_sound.png */,
 				B3CE2DB31851D18E006490C2 /* icon_tomato.png */,
 				B3FDF3CA185193230052053B /* icon_up.png */,
 				B3FDF3C8185193070052053B /* icon_down.png */,
@@ -391,8 +404,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				B3FDF3CB185193230052053B /* icon_up.png in Resources */,
+				B32EC80E1859376F00E470FF /* sound.wav in Resources */,
 				B3FDF3C718517C780052053B /* icon_stop.png in Resources */,
+				B32EC80A1859336500E470FF /* icon_sound.png in Resources */,
 				B3CE2DB41851D18E006490C2 /* icon_tomato.png in Resources */,
+				B32EC8091859336500E470FF /* icon_sound_off.png in Resources */,
 				B3CE2DB81851E4A4006490C2 /* bear.jpg in Resources */,
 				B3FDF37E1851089B0052053B /* Main_iPad.storyboard in Resources */,
 				B3FDF3831851089B0052053B /* Images.xcassets in Resources */,
