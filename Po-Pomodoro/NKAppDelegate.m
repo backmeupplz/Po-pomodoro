@@ -40,6 +40,7 @@
 
 - (void)applicationDidEnterBackground:(UIApplication *)application
 {
+    [[UIApplication sharedApplication] cancelAllLocalNotifications];
     [(NKMainViewController *)[(SWRevealViewController *)self.window.rootViewController frontViewController] scheduleLocalNotifications];
 }
 

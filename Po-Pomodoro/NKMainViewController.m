@@ -240,6 +240,19 @@
     if (![userDefaults objectForKey:@"timestamp"]) return;
     
     int interval = [[NSDate date] timeIntervalSince1970] - [[userDefaults objectForKey:@"timestamp"] intValue];
+    isSoundOn = NO;
+    while (interval > 0) {
+        int seconds = [self.timerLabel.text seconds];
+        if (interval > seconds) {
+            interval -= seconds;
+            [self timerLabelDidReachZero];
+        } else {
+            seconds -= interval;
+            self.timerLabel.text = [NSString stringFromSeconds:seconds];
+            interval = 0;
+        }
+    }
+    isSoundOn = YES;
 }
 
 #pragma mark - Rotation -
