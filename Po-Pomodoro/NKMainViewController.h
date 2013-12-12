@@ -46,4 +46,7 @@
 - (IBAction)playTouched:(UIButton *)sender;
 - (IBAction)nextTouched:(UIButton *)sender;
 
+- (void)scheduleLocalNotifications;
+- (void)restoreTimers;
+
 @end

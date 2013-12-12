@@ -8,6 +8,8 @@
 
 #import "NKAppDelegate.h"
 #import "GAI.h"
+#import "SWRevealViewController.h"
+#import "NKMainViewController.h"
 
 @implementation NKAppDelegate
 
@@ -25,12 +27,31 @@
     return YES;
 }
 
-- (void)initializeUserDefaults {
+- (void)initializeUserDefaults
+{
     if (![userDefaults objectForKey:wasLaunchedBefore]) {
         [userDefaults setObject:@YES forKey:wasLaunchedBefore];
         
         [userDefaults setObject:@[] forKey:pomodoroHistory];
     }
+    
+    [userDefaults setObject:nil forKey:@"timestamp"];
+}
+
+- (void)applicationDidEnterBackground:(UIApplication *)application
+{
+    [(NKMainViewController *)[(SWRevealViewController *)self.window.rootViewController frontViewController] scheduleLocalNotifications];
+}
+
+- (void)applicationDidBecomeActive:(UIApplication *)application
+{
+    [[UIApplication sharedApplication] cancelAllLocalNotifications];
+    [(NKMainViewController *)[(SWRevealViewController *)self.window.rootViewController frontViewController] restoreTimers];
+}
+
+- (void)applicationWillTerminate:(UIApplication *)application
+{
+    [[UIApplication sharedApplication] cancelAllLocalNotifications];
 }
 
 @end

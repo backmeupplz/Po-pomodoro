@@ -195,10 +195,58 @@
     [userDefaults setObject:array forKey:pomodoroHistory];
 }
 
+- (void)scheduleLocalNotifications
+{
+    if (!self.playButton.hidden)
+        return;
+    
+    int secondsBeforeFire = [self.timerLabel.text seconds];
+    
+    for (int j = 0; j < 8; j++) {
+        for (int i = currentPomodoro; i < pomodoro.count; i++) {
+            UILocalNotification *notification = [[UILocalNotification alloc] init];
+            notification.fireDate = [NSDate dateWithTimeIntervalSinceNow:secondsBeforeFire];
+            
+            notification.alertBody = (i % 2 == 0) ? @"Great work! Time to have a rest" : @"It's time to work!";
+            if (isSoundOn)
+                notification.soundName = @"sound.wav";
+            [[UIApplication sharedApplication] scheduleLocalNotification:notification];
+            
+            secondsBeforeFire += [[pomodoro[i] stringByAppendingString:@":00"] seconds];
+        }
+        
+        for (int i = 0; i < currentPomodoro; i++) {
+            UILocalNotification *notification = [[UILocalNotification alloc] init];
+            notification.fireDate = [NSDate dateWithTimeIntervalSinceNow:secondsBeforeFire];
+            notification.alertBody = (i % 2 == 0) ? @"Great work! Time to have a rest" : @"It's time to work!";
+            if (isSoundOn)
+                notification.soundName = @"sound.wav";
+            [[UIApplication sharedApplication] scheduleLocalNotification:notification];
+            
+            secondsBeforeFire += [[pomodoro[i] stringByAppendingString:@":00"] seconds];
+        }
+    }
+    
+    [self saveTimers];
+}
+
+- (void)saveTimers
+{
+    [userDefaults setObject:@([[NSDate date] timeIntervalSince1970]) forKey:@"timestamp"];
+}
+
+- (void)restoreTimers
+{
+    if (![userDefaults objectForKey:@"timestamp"]) return;
+    
+    int interval = [[NSDate date] timeIntervalSince1970] - [[userDefaults objectForKey:@"timestamp"] intValue];
+}
+
 #pragma mark - Rotation -
 
 - (void)willAnimateRotationToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration {
-    if (!IPAD) {
+    if (!IPAD)
+    {
         if (toInterfaceOrientation == UIInterfaceOrientationLandscapeLeft ||
             toInterfaceOrientation == UIInterfaceOrientationLandscapeRight) {
             [self hideToolbar:YES];

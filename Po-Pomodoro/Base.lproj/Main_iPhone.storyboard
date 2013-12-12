@@ -243,11 +243,30 @@
                                             <action selector="toggleLeftTouched:" destination="LWa-Z3-rnJ" eventType="touchUpInside" id="Jo7-Qz-MUT"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xwY-Vp-96V">
+                                        <rect key="frame" x="283" y="18" width="37" height="37"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="37" id="KK4-hB-mgx"/>
+                                            <constraint firstAttribute="height" constant="37" id="ZrI-kN-jTM"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <inset key="imageEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                                        <state key="normal" image="icon_sound.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="selected" image="icon_sound_off.png"/>
+                                        <connections>
+                                            <action selector="soundTouched:" destination="LWa-Z3-rnJ" eventType="touchUpInside" id="GJV-hM-7aB"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="centerX" secondItem="iCN-Qf-Iw2" secondAttribute="centerX" id="AAu-ca-rEB"/>
                                     <constraint firstAttribute="bottom" secondItem="iCN-Qf-Iw2" secondAttribute="bottom" constant="20" id="UuN-6Y-HEe"/>
+                                    <constraint firstAttribute="trailing" secondItem="xwY-Vp-96V" secondAttribute="trailing" id="YNM-pm-efS"/>
+                                    <constraint firstItem="xwY-Vp-96V" firstAttribute="top" secondItem="kU0-1Z-WeK" secondAttribute="top" constant="18" id="m4P-79-ZvF"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cN1-Gv-6n2" customClass="NKTimerCircle">
@@ -293,6 +312,7 @@
                         <outlet property="pauseButton" destination="5HC-Zc-ORa" id="QUy-ct-IY4"/>
                         <outlet property="playButton" destination="dWG-X0-pDp" id="8QN-Nc-T4W"/>
                         <outlet property="slider" destination="aIY-nB-liY" id="D3p-BX-I46"/>
+                        <outlet property="soundButton" destination="xwY-Vp-96V" id="qwL-m0-CgD"/>
                         <outlet property="tapGR" destination="eet-07-lVC" id="K37-U1-gj2"/>
                         <outlet property="timeIndicator" destination="Vnd-B9-ws5" id="Q7A-OQ-LXI"/>
                         <outlet property="timerCircle" destination="cN1-Gv-6n2" id="9fC-cQ-PkI"/>
@@ -316,6 +336,8 @@
         <image name="icon_pause.png" width="193" height="256"/>
         <image name="icon_play.png" width="213" height="256"/>
         <image name="icon_side.png" width="256" height="182"/>
+        <image name="icon_sound.png" width="256" height="256"/>
+        <image name="icon_sound_off.png" width="256" height="256"/>
         <image name="icon_stop.png" width="256" height="256"/>
         <image name="icon_tomato.png" width="70" height="70"/>
     </resources>
