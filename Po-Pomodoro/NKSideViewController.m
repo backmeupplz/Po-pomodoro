@@ -60,6 +60,18 @@
     return cell;
 }
 
+#pragma mark - UITableViewDelegate -
+
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [self deletePomodoroAtRow:indexPath.row];
+}
+
+- (UITableViewCellEditingStyle)tableView:(UITableView *)tableView editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return UITableViewCellEditingStyleDelete;
+}
+
 #pragma mark - General methods -
 
 - (NSArray *)getDataFromRaw:(NSArray *)raw
@@ -91,6 +103,36 @@
     }
     
     return result;
+}
+
+- (void)deletePomodoroAtRow:(int)row
+{
+    // Get defaults
+    NSMutableArray *defaults = [[userDefaults objectForKey:pomodoroHistory] mutableCopy];
+    
+    // Get required time
+    NSString *time = data[row][@"time"];
+    
+    // Make a formatter
+    NSDateFormatter *formatter = [NSDateFormatter new];
+    [formatter setDateStyle:NSDateFormatterMediumStyle];
+    [formatter setTimeStyle:NSDateFormatterNoStyle];
+    
+    // Prepare a dummy array to store numbers to delete
+    NSMutableArray *toDelete = [NSMutableArray array];
+    
+    // Get numbers to delete
+    for (NSNumber *timeNumber in defaults) {
+        NSString *timeString = [formatter stringFromDate:[[NSDate alloc] initWithTimeIntervalSince1970:timeNumber.intValue]];
+        if ([timeString isEqualToString:time])
+            [toDelete addObject:timeNumber];
+    }
+    
+    // Delete numbers
+    [defaults removeObjectsInArray:toDelete];
+    
+    // Save defaults
+    [userDefaults setObject:defaults forKey:pomodoroHistory];
 }
 
 @end

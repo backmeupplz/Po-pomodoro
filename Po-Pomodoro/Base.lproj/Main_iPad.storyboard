@@ -49,16 +49,19 @@
                                 </subviews>
                             </scrollView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="80" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="YiX-Fs-zFx">
-                                <rect key="frame" x="0.0" y="20" width="768" height="960"/>
+                                <rect key="frame" x="0.0" y="20" width="260" height="960"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="260" id="v6X-X9-pnQ"/>
+                                </constraints>
                                 <color key="sectionIndexTrackingBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="dateCell" rowHeight="80" id="PAK-Ij-2eq" customClass="NKSideMenuCell">
-                                        <rect key="frame" x="0.0" y="22" width="768" height="80"/>
+                                        <rect key="frame" x="0.0" y="22" width="260" height="80"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="PAK-Ij-2eq" id="aNR-4I-LqP">
-                                            <rect key="frame" x="0.0" y="0.0" width="768" height="79"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="260" height="79"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="02S-Pu-e7n">
@@ -117,7 +120,6 @@
                         <color key="backgroundColor" red="1" green="0.92156869173049927" blue="0.93725496530532837" alpha="1" colorSpace="deviceRGB"/>
                         <constraints>
                             <constraint firstItem="dzm-dU-PEL" firstAttribute="top" secondItem="YiX-Fs-zFx" secondAttribute="bottom" constant="44" id="7Pl-kJ-E8P"/>
-                            <constraint firstAttribute="trailing" secondItem="YiX-Fs-zFx" secondAttribute="trailing" id="EcG-KI-Gyh"/>
                             <constraint firstItem="zYg-0v-Q2N" firstAttribute="top" secondItem="BaD-Ph-Zom" secondAttribute="top" id="Qo7-A4-Clh"/>
                             <constraint firstAttribute="trailing" secondItem="zYg-0v-Q2N" secondAttribute="trailing" id="bg8-fL-rKh"/>
                             <constraint firstItem="dzm-dU-PEL" firstAttribute="top" secondItem="zYg-0v-Q2N" secondAttribute="bottom" id="i19-SM-hkG"/>
