@@ -197,8 +197,10 @@
 
 - (void)scheduleLocalNotifications
 {
-    if (!self.playButton.hidden)
+    if (!self.playButton.hidden) {
+        [userDefaults setObject:nil forKey:@"timestamp"];
         return;
+    }
     
     int secondsBeforeFire = [self.timerLabel.text seconds];
     
